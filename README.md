@@ -1,1 +1,7 @@
-# Wrangling-OpenStreetMap-Data
+# Wrangling OpenStreetMap Data
+OpenStreetMap(OSM) is a collaborative project that contains an editable map of the world. The website [www.openstreetmap.org](https://www.openstreetmap.org) hosts maps of various cities in a file format called the 'OSM XML' format. The details about OSM files can be found [here](http://wiki.openstreetmap.org/wiki/OSM_XML). In this project, the map of the city San Francisco is chosen and the quality of the data in its OSM file is assessed for validity, accuracy, completeness, consistency and uniformity. The data is then cleaned and loaded into a local database.
+
+The OSM file of the city contains data in XML format and to wrangle this data, python's 'ElementTree' library is used. The wrangled data is then audited in different ways. The 'streets_audit.py' checks for inconsistent street names in the file and these inconsistent names are then cleaned. The 'postcodes_auidt.py' checks if the postal codes in the file are in the expected format or not. The 'housenumber_audit.py' finds the house numbers with unexpected symbols or patterns and such house numbers are programatically cleaned. After the data is audited and cleaned, the data from the XML file is converted to multiple CSV files and this data is then loaded into a local database and is explored by running queries.
+
+## Running the project
+To run this project locally, download the OSM file from [here](https://mapzen.com/data/metro-extracts/metro/san-francisco_california/) and run the 'data.py' script.
