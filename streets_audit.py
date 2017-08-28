@@ -1,6 +1,6 @@
 """
 This script audits the street names.
-Author: Udacity
+Author : Sai Venkat Kotha, Udacity
 """
 
 #importing necessary packages and modules

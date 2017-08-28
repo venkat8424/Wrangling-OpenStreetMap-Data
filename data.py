@@ -1,4 +1,5 @@
 """
+Author : Sai Venkat Kotha
 This script cleans the audited elements and writes
 the data from the osm file to csv files
 """
